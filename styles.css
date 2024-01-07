@@ -30,7 +30,7 @@ body {
 }
 
 ::selection {
-  background: yellow;
+  background: #fff100;
 }
 
 a, a:hover, a:visited {
@@ -56,4 +56,10 @@ a, a:hover, a:visited {
 .navbar a {
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.text-paragraph a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
