@@ -1,0 +1,59 @@
+@font-face {
+  font-family: NimbusSans;
+  src: url("fonts/NimbusSanL-Reg.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NimbusSans;
+  font-weight: bold;
+  src: url("fonts/NimbusSanL-Bol.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueHaasGrotesk;
+  src: url("fonts/NeueHaasGroteskRegular.ttf")
+}
+
+@font-face {
+  font-family: NeueHaasGrotesk;
+  font-weight: bold;
+  src: url("fonts/NeueHaasGroteskBold.ttf")
+}
+
+body {
+  margin: 0;
+  font-family: 'NeueHaasGrotesk';
+  font-size: 32px;
+  cursor: crosshair;
+  color: #080F0F;
+  background-color: #FFFFFF;
+}
+
+::selection {
+  background: yellow;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #080F0F;
+}
+
+.container {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.navbar {
+  font-size: 64px;
+  font-weight: bold;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+.navbar a {
+  padding-left: 32px;
+  padding-right: 32px;
+}
