@@ -20,9 +20,15 @@
   src: url("fonts/NeueHaasGroteskBold.ttf")
 }
 
+@media (max-width: 1100px) {
+  nav{
+    width: 100%;
+  }
+}
+
 body {
   margin: 0;
-  font-family: 'NeueHaasGrotesk';
+  font-family: 'NeueHaasGrotesk','Arial', sans-serif;
   font-size: 32px;
   cursor: crosshair;
   color: #080F0F;
@@ -38,28 +44,66 @@ a, a:hover, a:visited {
   color: #080F0F;
 }
 
-.container {
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
-.navbar {
+header {
+  font-family: 'NeueHaasGrotesk','Arial', sans-serif;
   font-size: 64px;
-  font-weight: bold;
   overflow: hidden;
   position: sticky;
   top: 0;
   width: 100%;
   padding: 16px;
+  border-bottom: 1px solid black;
 }
 
-.navbar a {
+header a {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.text-paragraph a {
-  color: black;
+code {
+  font-family: monospace;
+  background-color:#eeeeee;
+  border-radius: .25rem;
+  color: #080F0F;
+  padding: 2px 8px;
+}
+
+nav {
+  padding: 48px;
+  float: left;
+  border-right: 1px solid black;
+}
+
+.content {
+  height: 100vh;
+}
+
+.main {
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p a {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+p a:hover{
+  transition: ease-in-out .3s;
+  text-decoration: underline 2px;
+  color: rgb(117, 117, 117);
+}
+
+p a::after {
+  content: "\2197\fe0e";
+}
+
+.navbar {
+  list-style-type: none;
+}
+
+.navbar li {
+  padding-bottom: 32px;
 }
