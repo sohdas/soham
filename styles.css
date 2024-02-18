@@ -46,7 +46,7 @@ a, a:hover, a:visited {
 
 header {
   font-family: 'NeueHaasGrotesk','Arial', sans-serif;
-  font-size: 64px;
+  font-size: 36px;
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -83,6 +83,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.glass {
+  background-color: #ffffff56;
+  backdrop-filter: blur(32px);
 }
 
 p a {
