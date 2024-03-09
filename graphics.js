@@ -26,7 +26,7 @@ function draw() {
   noFill();
   //loop for adding 100 lines
   for(let i = 0;i<20;i++){
-    triangle(x1(t+i),y1(t+i),x2(t+i)+20,y2(t+i)+20, x2(t+i) - y1(t+i), y2(t+1) - x1(t+i));
+    triangle(x1(t+i),y1(t+i),x2(t+i)+20,y2(t+i)+20, x2(t+i) - y1(t+i), y2(t-i) - x1(t-i));
     //line(x1(t + i), y1(t + i), x2(t + i), y2(t + i));
   }
   pop();
