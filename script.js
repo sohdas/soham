@@ -4,7 +4,6 @@ async function getLatestSongInfo() {
   const response = await fetch(URL);
   const response_json = await response.json();
 
-  console.log(response_json)
   const latestSong = response_json.recenttracks.track[0];
   var songTime = "";
   var songTitle = "";
@@ -25,9 +24,9 @@ async function getLatestSongInfo() {
   // Changing elements on website:
   latestSongCover.src = songCover;
   latestSongCover.alt = songTitle;
-  latestSongTitle.innerHTML = "last seen listening to: <b>" + songTitle + "</b>";
-  latestSongArtist.innerHTML = "by: <b>" + songArtist + "</b>";
-  latestSongTime.innerHTML = "about: <b>" + songTime + "</b>";
+  latestSongTitle.innerHTML = "recently listening to <b>" + songTitle + "</b>";
+  latestSongArtist.innerHTML = "by <b>" + songArtist + "</b>";
+  latestSongTime.innerHTML = "at <b>" + songTime + "</b>";
   return;
 }
 
