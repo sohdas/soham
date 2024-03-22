@@ -1,6 +1,7 @@
 async function getLatestSongInfo() {
-  // TODO: Replace this URL with https://soham.place/api/last_fm http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key=8a3246234d465cc6738f618f1e8a56ce&format=json
+  // TODO: Switch to using Functions URL before pushing code
   const URL = "https://soham.place/api/last_fm"
+  //const URL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key=8a3246234d465cc6738f618f1e8a56ce&format=json"
   const response = await fetch(URL);
   const response_json = await response.json();
 

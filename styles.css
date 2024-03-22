@@ -29,7 +29,7 @@
 body {
   margin: 0;
   font-family: 'NeueHaasGrotesk','Arial', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   cursor: crosshair;
   color: #080F0F;
   background-color: #FFFFFF;
@@ -65,7 +65,7 @@ header a {
 
 code {
   font-family: monospace;
-  background-color:#eeeeee;
+  background-color:#e4eae4;
   border-radius: .25rem;
   color: #080F0F;
   padding: 2px 8px;
@@ -126,7 +126,7 @@ p a::after {
 .widget {
   position: fixed;
   bottom: 6vh;
-  right: 0;
+  left: 0;
   margin: 0;
   font-family: 'NeueHaasGrotesk','Arial', sans-serif;
   font-size: 18px;
