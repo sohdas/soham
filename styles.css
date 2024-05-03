@@ -89,18 +89,6 @@ nav {
   z-index: 10;
 }
 
-.glass {
-  background-color: #ffffff56;
-  backdrop-filter: blur(48px);
-  -webkit-backdrop-filter: blur(48px);
-}
-
-.glassish {
-  background-color: #ffffff56;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
 p a {
   text-decoration: underline;
   text-decoration-thickness: 2px;

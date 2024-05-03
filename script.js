@@ -13,7 +13,7 @@ async function getLatestSongInfo() {
           songTime = "now playing";
       }
   } catch (error) {
-      songTime = latestSong.date["#text"] + " GMT";
+      songTime = latestSong.date["#text"].split(',')[0];
   }
   if (latestSong.name.toLowerCase() === latestSong.album["#text"].toLowerCase()) {
       songTitle = latestSong.name;
@@ -27,7 +27,7 @@ async function getLatestSongInfo() {
   latestSongCover.alt = songTitle;
   latestSongTitle.innerHTML = "recently listening to <b>" + songTitle + "</b>";
   latestSongArtist.innerHTML = "by <b>" + songArtist + "</b>";
-  latestSongTime.innerHTML = "at <b>" + songTime + "</b>";
+  latestSongTime.innerHTML = "on <b>" + songTime + "</b>";
   return;
 }
 
