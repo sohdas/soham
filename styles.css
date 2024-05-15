@@ -114,7 +114,7 @@ p a::after {
 
 .widget {
   position: fixed;
-  bottom: 6vh;
+  bottom: 0;
   left: 0;
   margin: 0;
   font-family: 'NeueHaasGrotesk','Arial', sans-serif;

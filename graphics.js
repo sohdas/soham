@@ -9,15 +9,9 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-let t = 0;
+let t = Math.floor(Math.random() * 2000) + 1;
 function draw() {
   background(255);
-
-  let locX = mouseX - height / 2;
-  let locY = mouseY - width / 2;
-
-  ambientLight(60, 60, 60);
-  pointLight(255, 255, 255, locX, locY, 100);
 
   push();
   stroke('#6d9071');
