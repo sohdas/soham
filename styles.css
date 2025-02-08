@@ -112,10 +112,18 @@ p a::after {
   padding-bottom: 32px;
 }
 
-.widget {
+.widget-left {
   position: fixed;
   bottom: 0;
   left: 0;
+  margin: 0;
+  font-family: 'NeueHaasGrotesk','Arial', sans-serif;
+  font-size: 18px;
+}
+.widget-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
   margin: 0;
   font-family: 'NeueHaasGrotesk','Arial', sans-serif;
   font-size: 18px;

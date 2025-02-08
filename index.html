@@ -1,42 +1,53 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Soham Dasgupta</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-    <script src="script.js"></script>
-    <script src="graphics.js"></script>
-  </head>
-  <body>
-    <header class="backdrop-blur-2xl shadow-sm">
-      <a href="#"> Soham Dasgupta </a>
-    </header>
-    <div class="content px-24">
-      <div class="main flex flex-col">
-        <div class="backdrop-blur-2xl px-24 py-8 rounded-full border border-black shadow-sm">
-          <p>
-            Hi, I'm Soham. I'm a software engineer based out of NYC, currently working at 
-            <a target="_blank" href="https://www.moderntreasury.com">Modern Treasury</a>.
-          </p>
-          <p>
-            You can reach me via email at <code>sohamdasg[at]gmail[dot]com</code>, or otherwise find me on <a target="_blank" href="https://www.linkedin.com/in/sohdas">LinkedIn</a>.
-          </p>
-        </div>
+
+<head>
+  <title>Soham Dasgupta</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="script.js"></script>
+  <script src="graphics.js"></script>
+</head>
+
+<body>
+  <header class="backdrop-blur-2xl shadow-sm">
+    <a href="#"> Soham Dasgupta </a>
+  </header>
+  <div class="content px-24">
+    <div class="main flex flex-col">
+      <div class="backdrop-blur-2xl px-24 py-8 rounded-full border border-black shadow-sm">
+        <p>
+          Hi, I'm Soham. I'm a software engineer based out of NYC, currently working at
+          <a target="_blank" href="https://www.moderntreasury.com">Modern Treasury</a>.
+        </p>
+        <p>
+          You can reach me via email at <code>sohamdasg[at]gmail[dot]com</code>, or otherwise find me on <a
+            target="_blank" href="https://www.linkedin.com/in/sohdas">LinkedIn</a>.
+        </p>
       </div>
-      <div class="social">
-      </div>
-      <div class="widget">
-        <div class="px-8 py-8 flex flex-row gap-4">
-          <img class="extraImage h-[86px]" id="latestSongCover">
-          <div class="extraInfo">
-            <p id="latestSongTitle"></p>
-            <p id="latestSongArtist"></p>
-            <p id="latestSongTime"></p>
-          </div>
+    </div>
+    <div class="social">
+    </div>
+    <div class="widget-left">
+      <div class="px-8 py-8 flex flex-row gap-4">
+        <img class="extraImage h-[86px]" id="latestSongCover">
+        <div class="extraInfo">
+          <p id="latestSongTitle"></p>
+          <p id="latestSongArtist"></p>
+          <p id="latestSongTime"></p>
         </div>
       </div>
     </div>
-  </body>
+    <div class="widget-right">
+      <div class="px-8 py-8 flex flex-col">
+        <p> What I'm currently reading: </p>
+        <div id="literal-widget" handle="sohdas" status="IS_READING" layout="list"></div>
+        <script src="https://literal.club/js/widget.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
