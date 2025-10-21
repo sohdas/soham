@@ -1,6 +1,6 @@
 async function getRecentTracksLastFM() {
   try {
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key={process.env.LASTFM_API_KEY}&format=json`);
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key=${process.env.LASTFM_API_KEY}&format=json`);
     const data = await response.json();
     return data
   } catch (error) {
