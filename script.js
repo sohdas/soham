@@ -1,10 +1,21 @@
+async function getRecentTracksLastFM() {
+  try {
+    const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key={process.env.LASTFM_API_KEY}&format=json`);
+    const data = await response.json();
+    return data
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 async function getLatestSongInfo() {
-  const URL = "https://soham.place/api/last_fm"
-  // const URL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key=8a3246234d465cc6738f618f1e8a56ce&format=json"
-  const response = await fetch(URL);
-  const response_json = await response.json();
+  const response_json = await getRecentTracksLastFM()
 
   const latestSong = response_json.recenttracks.track[0];
+  let latestSongCover = document.getElementById("latest-song-cover");
+  let latestSongTitle = document.getElementById("latest-song-title");
+  let latestSongArtist = document.getElementById("latest-song-artist");
+  let latestSongTime = document.getElementById("latest-song-time");
   var isPlaying = false;
   var songTime = "";
   var songTitle = "";
