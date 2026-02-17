@@ -20,15 +20,6 @@
   src: url("fonts/NeueHaasGroteskBold.ttf")
 }
 
-@font-face {
-    font-family: 'biro_script_standardregular';
-    src: url('fonts/biro_script_standard.woff2') format('woff2'),
-         url('fonts/biro_script_standard.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
 @media (max-width: 1100px) {
   nav{
     width: 100%;
