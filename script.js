@@ -1,3 +1,14 @@
+let canvas = document.getElementById("glsl-canvas");
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", resizeCanvas);
+
+resizeCanvas();
+
 async function getRecentTracksLastFM() {
   try {
     const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sohdas&api_key=8a3246234d465cc6738f618f1e8a56ce&format=json`);
@@ -48,3 +59,4 @@ async function getLatestSongInfo() {
 }
 
 getLatestSongInfo();
+

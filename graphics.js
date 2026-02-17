@@ -1,8 +1,8 @@
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-  canvas.position(0, 0);
-  canvas.style('z-index', '-10');
-  background(255);
+  // let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+  // canvas.position(0, 0);
+  // canvas.style('z-index', '-10');
+  // background(255);
 }
 
 function windowResized() {

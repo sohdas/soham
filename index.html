@@ -8,13 +8,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script src="script.js"></script>
-  <script src="graphics.js"></script>
-</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/patriciogonzalezvivo/glslCanvas@9c5eff041b1dbe1cd3ab813d6062b9a64207e37a/dist/GlslCanvas.js"></script></head>
 
 <body>
   <header class="backdrop-blur-2xl shadow-sm">
     <a href="#"> Soham Dasgupta </a>
   </header>
+  <canvas
+    class="glslCanvas"
+    id="glsl-canvas"
+    data-fragment-url="shader.frag"
+  >
+  </canvas>
   <div class="content px-24">
     <div class="main flex flex-col">
       <div
